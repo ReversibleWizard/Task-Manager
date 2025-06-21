@@ -9,25 +9,25 @@ A full-stack task management web application built using **Flask**, **MongoDB**,
 task-manager-app/
 │
 ├── app/
-│ ├── init.py # Flask app factory
+│ ├── init.py                   # Flask app factory
 │ ├── routes/
-│ │ ├── task_routes.py # /api/tasks endpoints
-│ │ └── stats_routes.py # /api/stats endpoint
+│ │ ├── task_routes.py          # /api/tasks endpoints
+│ │ └── stats_routes.py         # /api/stats endpoint
 │ ├── utils/
-│ │ ├── db.py # MongoDB connection
-│ │ ├── helpers.py # Serializers & ID validator
+│ │ ├── db.py                   # MongoDB connection
+│ │ ├── helpers.py              # Serializers & ID validator
 │ │ └── init.py
 │ └── templates/
-│ └── index.html # Frontend UI
+│ └── index.html                # Frontend UI
 │
 ├── static/
-│ ├── style.css # Frontend CSS
-│ └── script.js # Frontend JS
+│ ├── style.css                 # Frontend CSS
+│ └── script.js                 # Frontend JS
 │
-├── run.py # Entry point
-├── .env # Environment variables
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── run.py                      # Entry point
+├── .env                        # Environment variables
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
 ```
 ---
 
