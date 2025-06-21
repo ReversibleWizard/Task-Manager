@@ -5,7 +5,7 @@ A full-stack task management web application built using **Flask**, **MongoDB**,
 ---
 
 ## 📁 Project Structure
-
+```
 task-manager-app/
 │
 ├── app/
@@ -28,7 +28,7 @@ task-manager-app/
 ├── .env # Environment variables
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
-
+```
 ---
 
 ## ⚙️ Features
