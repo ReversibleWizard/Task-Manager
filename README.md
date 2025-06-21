@@ -136,7 +136,7 @@ pip install -r requirements.txt
 
 ## 🧑‍💻 Author
 
-Made by **[Sayak](https://github.com/reversiblewizard)**
+Made with ❤️ by **[Sayak](https://github.com/reversiblewizard)**
 
 ---
 
