@@ -31,6 +31,14 @@ task-manager-app/
     ├── style.css             # CSS styling
     └── script.js             # Frontend logic (JS)
 ```
+---
+
+## 🖼️ UI Preview
+
+Here’s what the Task Manager looks like:
+
+![Task Manager UI](assets/ui.png)
+
 
 ---
 
@@ -136,7 +144,7 @@ pip install -r requirements.txt
 
 ## 🧑‍💻 Author
 
-Made with ❤️ by **[Sayak](https://github.com/reversiblewizard)**
+Made by **[Sayak](https://github.com/reversiblewizard)**
 
 ---
 
