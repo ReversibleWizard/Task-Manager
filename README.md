@@ -29,6 +29,7 @@ task-manager-app/
 │   ├── index.html            # Frontend HTML (Jinja2)
 │   ├── style.css             # CSS styling
 │   └── script.js             # Frontend logic (JS)           
+|
 └── tests/                    # Test suite
     ├── test_api.py
     ├── test_integration.py
