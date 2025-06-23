@@ -23,11 +23,16 @@ task-manager-app/
 ├── .env                      # Environment variables (not tracked by Git)
 ├── .gitignore                # Ignored files/folders
 ├── requirements.txt          # Python package dependencies
+├── run_tests.py              # Test runner with coverage
 │
 ├── docs/
 │   ├── index.html            # Frontend HTML (Jinja2)
 │   ├── style.css             # CSS styling
 │   └── script.js             # Frontend logic (JS)           
+└── tests/                    # Test suite
+    ├── test_api.py
+    ├── test_integration.py
+    └── test_unit_logic.py
 
     
 ```
@@ -105,6 +110,21 @@ You can test these using [Postman](https://www.postman.com/) or [cURL](https://c
 - Form validation and user feedback
 - Filters for status and priority
 - No frameworks — just pure frontend
+
+---
+
+## ✅ Test Coverage
+
+- Unit, integration, and API tests written with `unittest` + `coverage`
+- Current coverage: **69%**
+- To view HTML report:
+
+```bash
+coverage html
+start coverage_html/index.html  # Or open manually in browser
+```
+
+> ![Coverage Screenshot](assets/coverage.png)
 
 ---
 
