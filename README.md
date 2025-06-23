@@ -25,9 +25,9 @@ task-manager-app/
 ├── requirements.txt          # Python package dependencies
 │
 ├── docs/
-│   ├── index.html
+│   ├── index.html            # Frontend HTML (Jinja2)
 │   ├── style.css             # CSS styling
-│   └── script.js             # Frontend logic (JS)           # Frontend HTML (Jinja2)
+│   └── script.js             # Frontend logic (JS)           
 
     
 ```
