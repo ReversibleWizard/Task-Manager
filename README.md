@@ -24,12 +24,12 @@ task-manager-app/
 ├── .gitignore                # Ignored files/folders
 ├── requirements.txt          # Python package dependencies
 │
-├── templates/
-│   └── index.html            # Frontend HTML (Jinja2)
-│
-└── static/
-    ├── style.css             # CSS styling
-    └── script.js             # Frontend logic (JS)
+├── docs/
+│   ├── index.html
+│   ├── style.css             # CSS styling
+│   └── script.js             # Frontend logic (JS)           # Frontend HTML (Jinja2)
+
+    
 ```
 ---
 
