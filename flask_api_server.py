@@ -22,6 +22,13 @@ try:
 except Exception as e:
     print(f"❌ Error connecting to MongoDB: {e}")
 
+
+# ---------- Utility Logic ----------
+def validate_task_data(data):
+    if "title" not in data or not data["title"].strip():
+        return False, "Title is required"
+    return True, None
+
 # Helper functions
 def serialize_doc(doc):
     if doc:
