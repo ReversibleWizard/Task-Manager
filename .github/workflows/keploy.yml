@@ -43,13 +43,13 @@ jobs:
             sleep 5
           done
 
-      - name: Download Keploy CLI
+      - name: Install Keploy CLI
         run: |
-          https://github.com/keploy/keploy/releases/download/v0.2.7/keploy-linux-amd64 -o keploy
+          curl -L https://github.com/keploy/keploy/releases/download/v0.2.7/keploy-linux-amd64 -o keploy
           chmod +x keploy
-          file keploy
           ./keploy version
           sudo mv keploy /usr/local/bin/keploy
+      
 
       - name: Run Keploy in test mode
         env:
