@@ -45,8 +45,10 @@ jobs:
 
       - name: Download Keploy CLI
         run: |
-          curl -L https://github.com/keploy/keploy/releases/latest/download/keploy-linux-amd64 -o keploy
+          curl -fsSL https://github.com/keploy/keploy/releases/latest/download/keploy-linux-amd64 -o keploy
           chmod +x keploy
+          file keploy
+          ./keploy version
           sudo mv keploy /usr/local/bin/keploy
 
       - name: Run Keploy in test mode
