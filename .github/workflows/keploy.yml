@@ -45,7 +45,7 @@ jobs:
 
       - name: Download Keploy CLI
         run: |
-          curl -fsSL https://github.com/keploy/keploy/releases/latest/download/keploy-linux-amd64 -o keploy
+          https://github.com/keploy/keploy/releases/download/v0.2.7/keploy-linux-amd64 -o keploy
           chmod +x keploy
           file keploy
           ./keploy version
