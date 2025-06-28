@@ -40,4 +40,4 @@ jobs:
 
       - name: Run Keploy test
         run: |
-          keploy test -c "python flask_api_server.py" --delay 10
+          keploy test -c "python3 flask_api_server.py" --delay 10
