@@ -32,12 +32,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Download and install Keploy
+      - name: Install Keploy CLI
         run: |
-          curl -L https://github.com/keploy/keploy/releases/download/v0.2.7/keploy-linux-amd64 -o keploy
-          chmod +x keploy
-          sudo mv keploy /usr/local/bin/keploy
+          curl --silent -L https://keploy.io/ent/install.sh | bash
 
-      - name: Run Keploy test
+      - name: Run Keploy Test Suite
         run: |
-          keploy test -c "python3 flask_api_server.py" --delay 10
+          export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
+          keploy test-suite --app=03d24177-315c-4ee1-a3ac-64ed0ab38567 --base-path http://localhost:8080/books --cloud
