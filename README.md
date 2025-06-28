@@ -47,7 +47,34 @@ Here’s what the Task Manager looks like:
 
 
 ---
+---
 
+## 🧪 API Documentation (Swagger)
+
+- Swagger UI is available at: [http://localhost:5000/swagger-ui](http://localhost:5000/swagger-ui)
+- OpenAPI JSON schema is served at: [http://localhost:5000/openapi.json](http://localhost:5000/openapi.json)
+
+<p align="center">
+  <img src="./assets/swagger-ui.png" alt="Swagger UI" />
+</p>
+
+---
+
+## 🔁 Keploy API Testing Integration
+
+This project uses [Keploy](https://keploy.io) to record and replay API calls for test generation using real-time traffic, enabling high test coverage without manual test writing.
+
+### 🚀 How it works:
+- Records curl-based traffic.
+- Automatically generates unit and integration tests.
+- Validates API behavior deterministically.
+
+<p align="center">
+  <img src="./assets/keploy-report.png" alt="Keploy Report"/>
+</p>
+
+
+---
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the repository
