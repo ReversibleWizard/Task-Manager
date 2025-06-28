@@ -37,9 +37,11 @@ jobs:
 
       - name: Download Keploy Binary
         run: |
-          curl -L https://github.com/keploy/keploy/releases/latest/download/keploy-linux-amd64 -o keploy
+          curl -fsSL -o keploy.tar.gz https://github.com/keploy/keploy/releases/latest/download/keploy-linux-amd64.tar.gz
+          tar -xzf keploy.tar.gz
           chmod +x keploy
           sudo mv keploy /usr/local/bin/keploy
+      
 
       - name: Wait for MongoDB
         run: |
